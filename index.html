@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrollbars */
+            font-size: 20px; /* Increase base font size */
+            background-image: url('bg3.png');
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%; /* Reduced height */
+            object-fit: cover; /* Cover the entire area */
+        }
+        .container {
+            position: absolute;
+            top: 62%; /* Adjusted top position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 2000px;
+            text-align: center;
+            font-size: 25px; /* Increased font size */
+            background-image: url('bg3.png'); /* Background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background */
+            color: antiquewhite;
+        }
+        .container button {
+            font-size: inherit; /* Inherit font size from parent (.container) */
+        }
+    </style>
+</head>
+<body >
+    <video src="COMPLETE V2.mp4" autoplay loop muted playsinline></video>
+    <div class="container">
+        <h1><b>CODE VR QUIZ PHASE</b></h1>
+        <p>Choose the type of questions you want to attempt:</p>
+        <p><button id="c">C language</button></p>
+        <p><button id="c++">C++ language</button></p>
+        <p><button id="java">JAVA language</button></p>
+        <p><button id="python">PYTHON language</button></p>
+    </div>
+    <script>
+     const j = document.getElementById('java');
+     j.addEventListener('click', function(){
+           window.location.href = 'JAVA.html';
+     });
+     const p = document.getElementById('python');
+     p.addEventListener('click', function(){
+           window.location.href = 'python.html';
+     });
+     const c = document.getElementById('c');
+     c.addEventListener('click', function(){
+           window.location.href = 'C.html';
+     });
+     const c2 = document.getElementById('c++');
+     c2.addEventListener('click', function(){
+           window.location.href = 'c++.html';
+     });
+     
+    </script>
+</body>
+</html>
